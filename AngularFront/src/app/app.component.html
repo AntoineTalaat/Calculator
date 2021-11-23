@@ -1,0 +1,38 @@
+
+
+        
+<div class="container">
+    <div class="display">
+        <div type="text" class="OnScreenText">{{expression}}</div>
+        <div type="text" class="OnScreenText" >{{result}}</div>
+    </div>
+    <div class= "allbuttons">
+        <div class="button op" (click)="percentage()" >%</div>
+        <div class="button op" (click)="ClearAll()">CE</div>
+        <div class="button op" (click)="ClearAll()">C</div>
+        <div class="button del" (click)="Erase()">&#x232B;</div>
+        <div class="button op" (click)="Reciprocal()" >1/x</div>
+        <div class="button op" (click)="pressedOperator('^')"> x<sup>y</sup> </div>
+        <div class="button op" (click)="pressedOperator('^0.5')">&#8730; x</div>
+        <div class="button op" (click)="pressedOperator('/')">/</div>
+        <div class="button" (click)="pressedNum('7')">7</div>
+        <div class="button" (click)="pressedNum('8')">8</div>
+        <div class="button" (click)="pressedNum('9')">9</div>
+        <div class="button op" (click)="pressedOperator('*')">*</div>
+        <div class="button" (click)="pressedNum('4')">4</div>
+        <div class="button" (click)="pressedNum('5')">5</div>
+        <div class="button" (click)="pressedNum('6')">6</div>
+        <div class="button op" (click)="pressedOperator('-')">-</div>
+        <div class="button" (click)="pressedNum('1')">1</div>
+        <div class="button" (click)="pressedNum('2')">2</div>
+        <div class="button" (click)="pressedNum('3')">3</div>
+        <div class="button op " (click)="pressedOperator('+')">+</div>
+        <div class="button" (click)="switchSigns()">+/-</div>
+        <div class="button" (click)="pressedNum('0')">0</div>
+        <div class="button" (click)="pressedNum('.')" >.</div>
+        <div class="button eq" (click)="evaluate()">=</div>
+    </div>
+    
+</div>
+    
+
